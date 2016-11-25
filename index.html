@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" class="signin no-js" ng-app="MBA">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+        <title>手机百度BI平台</title>
+        <META HTTP-EQUIV="Pragma" CONTENT="no-cache">
+        <META HTTP-EQUIV="Cache-Control" CONTENT="no-cache">
+        <META HTTP-EQUIV="Expires" CONTENT="0">
+        <link rel="stylesheet" type="text/css" href="./frontend/lib/css/bootstrap.min.css" />
+</head>
+    <body class="bg-primary" ng-controller="LoginCtrl">
+    <div class=center-wrapper>
+        <div class=center-content>
+            <div class="row no-m" style="margin: 0;">
+                <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4">
+                    <h1 class="text-center" style="text-shadow:0 1px 3px rgba(0,0,0,.4),0 0 30px rgba(0,0,0,.075);">手机百度BI平台</h1>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <p>
+                        <a ng-href="/searchboxbi/api/login" ng-click="goRun($event)" class="btn btn-success btn-lg btn-block" style="font-size:16px;font-weight:bold;text-shadow:0 1px 3px rgba(0,0,0,.4),0 0 30px rgba(0,0,0,.075);">使用内网认证登陆后使用 &rarr;</a>
+                    </p>
+                    <br/>
+                    <p class="text-center" style="text-shadow:0 1px 3px rgba(0,0,0,.4),0 0 30px rgba(0,0,0,.075)";>Copyright &copy;<span id=year class=mr5 ng-bind="year"></span><span>MBD Team</span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+<script type="text/javascript" src="./frontend/lib/js/angular.min.js"></script>
+<script type="text/javascript" src="./frontend/modules/main/login.js"></script>
+</body>
+</html>

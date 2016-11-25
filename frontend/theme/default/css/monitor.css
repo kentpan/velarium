@@ -1,0 +1,151 @@
+.panel-body {
+    padding: 10px 10px 0;
+}
+
+.sur {
+    height: auto;
+}
+
+.sur-right {
+    width: 100%;
+    float: left;
+    height: auto;
+    background-color: #e4e6e9;
+}
+#monitorContainer {
+    height: 800px;
+}
+#echartsContainer {
+    display: none;
+}
+#monitor-editor {
+    z-index: -1;
+    position: absolute;
+    border: 1px solid #aaa;
+    border-radius: 3px;
+    resize: none;
+    padding: 5px;
+    text-align: center;
+    color: #E72525;
+}
+
+#monitor-nodeMenu {
+    width:122px;
+    border: 1px solid #aaa;
+    border-radius:7px;
+    border-bottom: 0;
+    background: #eee;
+    position: absolute;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    box-shadow: 0 0 5px #434343;
+}
+#monitor-linkMenu {
+    width:122px;
+    border: 1px solid #aaa;
+    border-radius:7px;
+    border-bottom: 0;
+    background: #eee;
+    position: absolute;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    box-shadow: 0 0 5px #434343;
+}
+#monitor-tools li{
+    width:122px;
+    position:relative;
+}
+
+#monitor-tools li a {
+    height:30px;
+    line-height: 30px;
+    width:100px;
+    margin-left: 11px;
+    text-align: center;
+    display: block;
+    border-bottom: 1px solid #aaa;
+    cursor: pointer;
+
+}
+
+#monitor-tools > li:hover {
+    background: #fff;
+    border-radius:7px;
+}
+
+
+#monitor-tools span{
+    display:inline-block;
+    height:30px;
+    line-height: 30px;
+    text-align: center;
+    width:70px;
+    margin-left: 15px;
+    border-bottom: 1px solid #ADADAD;
+}
+#monitor-tools .lili li:hover{
+    background: #E9E7E7;
+    border-radius: 5px;
+}
+#monitor-tools .lili li:active{
+    background:#FFFFFF;
+    border-radius: 0px;
+}
+#monitor-tools .nob{
+    border:none !important;
+}
+#monitor-tools .lili li{
+    height:30px;
+    width:100px!important;
+}
+#monitor-tools .lili{
+    border-radius:5px;
+    box-shadow: 0 0 5px #434343;
+}
+#monitor-tools .li1, #monitor-tools .li2, #monitor-tools .li3{
+    width: 110px;
+    height: 36px;
+    background: #666666;
+    position:relative;
+    cursor: pointer;
+}
+#monitor-tools .li3{
+    border-radius:0 0 5px 5px;
+}
+#monitor-tools .nav1, #monitor-tools .nav2, #monitor-tools .nav3{
+    list-style: none;
+    position:absolute;
+    left: 110px;
+    top: 0px;
+    display: none;
+}
+#monitor-tools .li1:hover .nav1{
+    display:block;
+    background-color: #C5C5C5;
+}
+#monitor-tools .li2:hover .nav2{
+    display:block;
+    background-color: #C5C5C5;
+}
+#monitor-tools .li3:hover .nav3{
+    display:block;
+    background-color:#C5C5C5;
+}
+#monitor-tools .nav4, #monitor-tools .nav5{
+    list-style: none;
+    position:absolute;
+    left: 122px;
+    top: 0px;
+    display: none;
+    cursor:pointer;
+}
+#level:hover .nav4{
+    display:block;
+    background-color:#C5C5C5;
+}
+#text:hover .nav5{
+    display:block;
+    background-color:#C5C5C5;
+}

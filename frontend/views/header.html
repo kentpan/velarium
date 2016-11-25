@@ -1,0 +1,18 @@
+<div class="brand">
+    <a href="javascript:volid(0);" class="ti-menu off-left visible-xs" data-toggle="offscreen" data-move="ltr"></a>
+    <a href="#/index" class="navbar-brand"><span class="heading-font"> 手百RTA </span>
+    </a>
+</div>
+<ul class="nav navbar-nav navbar-right">
+    <li ng-class="{true: 'off-right open', false: 'off-right'}[hover]" ng-mouseover="hover=true"
+        ng-mouseleave="hover=false">
+        <a href="javascript:;" data-toggle="dropdown">
+            <span class="hidden-xs ml10 biuser" ng-bind="username"></span>
+            <i class="ti-angle-down ti-caret hidden-xs"></i>
+        </a>
+    </li>
+    <li style="height: 40px;line-height: 70px;color: #ccc;"><div style="margin-right: 1px;margin-top: 23px;height: 25px;border-right: 1px solid #ccc; "></div></li>
+    <li>
+        <a id="logout" href="/searchboxbi/api/logout?service={{login}}"><span class="offlogo">退出登陆</span></a>
+    </li>
+</ul>

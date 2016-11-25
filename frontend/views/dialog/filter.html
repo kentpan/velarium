@@ -1,0 +1,182 @@
+
+    <div class="modal-dialog" id="modalId">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div class="modal-main clearfix">
+                    <form class="form-horizontal" role="form" data-parsley-validate="true" novalidate="" name="myForm">
+                        <div class="row">
+                            <div class="col-md-6 tipsleft">
+                                <div class="form-group">
+                                    <label  class="col-sm-5 control-label">平台:</label>
+                                    <div class="col-sm-7">
+                                        <select select2 id="myCreateOs"  class="form-control" ng-init="index.myCreateOs='0'" ng-change="index.createOs($event)"   ng-model="index.myCreateOs"  name="createOs">
+                                            <option style="font-size: 14px;" value="0"></option>
+                                            <option  value="{{ v.id }}" ng-repeat="v in index.logSizeData">{{ v.name }}</option>
+                                        </select>
+                                    </div>
+
+                                    <div bi-select></div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 tipsleft">
+                                <div class="form-group">
+                                    <label class="col-sm-5 control-label">版本:</label>
+                                    <div class="col-sm-7">
+                                        <select select2 id="myCreateSoftVersion"  class="form-control" ng-init="index.myCreateSoftVersion='0'" ng-change="index.createSoftVersion($event)"   ng-model="index.myCreateSoftVersion"  name="createSoftVersion">
+                                            <option style="font-size: 14px;" value="0"></option>
+                                            <option name="{{item.os_name}}" value="{{ item.id }}" ng-repeat="item in index.SoftVersionData">{{ item.name }}</option>
+                                        </select>
+                                        <!-- <angucomplete  id="soft_version" ng-model="selectedCountry_1.title"  pause="100" selectedobject="selectedCountry_1"  localdata="angucomplete[platform][id]" searchfields="name" titlefield="name" minlength="1" inputclass="form-control" matchclass="highlight" /> -->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 tipsleft">
+                                <div class="form-group">
+                                    <label class="col-sm-5 control-label">下载渠道:</label>
+
+                                    <div class="col-sm-7">
+                                            <angucomplete  id="download_channel" ng-model="selectedCountry_1.title"  pause="100" selectedobject="selectedCountry_1"  localdata="ex1" searchfields="name" titlefield="name" minlength="1" inputclass="form-control" matchclass="highlight" placeholder="1099a" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 tipsleft">
+                                <div class="form-group">
+                                    <label class="col-sm-5 control-label">升级渠道:</label>
+                                    <div class="col-sm-7">
+                                            <angucomplete id="upgrade_channel" pause="100"  selectedobject="selectedCountry_2" localdata="ex2" searchfields="name" titlefield="name" minlength="1" inputclass="form-control" matchclass="highlight" placeholder="1099a"/>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 tipsleft">
+                                <div class="form-group">
+                                    <label class="col-sm-5 control-label">地域:</label>
+
+                                    <div class="col-sm-7">
+                                        <select select2 id="myCreateRegion" class="form-control" ng-init="index.myCreateRegion='province'"  ng-change="index.createRegion($event)"  ng-model="index.myCreateRegion"  name="myCreateRegion">
+                                            <option value="province">省份</option>
+                                            <option value="{{v.id}}" ng-repeat="v in index.region">{{v.name}}</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <div class="col-sm-7">
+                                        <angucomplete id="{{index.regionDatas}}" ng-model="anguFilter"  pause="100" selectedobject="selectedCountry_4" localdata="index.countries" searchfields="name" titlefield="name" minlength="1" inputclass="form-control " matchclass="highlight" placeholder="北京"/>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label class="col-sm-5 control-label">设备终端:</label>
+
+                                <div class="col-sm-7 end" id="end">
+                                    <input  type="checkbox" name="my-checkbox" checked  id="mySwitchA"  data-on-text="<span>开</span>" data-off-text="<span>关</span>"/>
+                                    <!-- <span id="0" class="phoneSelected" ng-click="index.endExpression($event)">开</span>
+                                    <span id="1" class="phoneSelect" ng-click="index.endExpression($event)">关</span> -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6" id="phoneOs">
+                            <div class="form-group">
+                                <div class="col-sm-7" style="height:40px;"></div>
+                            </div>
+                        </div>
+                        <div id="endShowLable">
+                            <div class="col-md-6" id="phoneExpression">
+                                <div class="form-group">
+                                    <div class="col-sm-7" style="height:40px;"></div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label class="col-sm-5 control-label">品牌:</label>
+
+                                    <div class="col-sm-7">
+                                        <angucomplete id="phone_manufacturer" ng-model="anguFilter" url="http://myserver.com/api/user/find?s="  pause="100" selectedobject="selectedCountry_3" localdata="index.countries" searchfields="name" titlefield="name" minlength="1" inputclass="form-control " matchclass="highlight" placeholder="IPHONE"/>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label class="col-sm-5 control-label">机型:</label>
+
+                                    <div class="col-sm-7">
+                                        <angucomplete id="phone_model" ng-model="anguFilter" url="http://myserver.com/api/user/find?s="  pause="100" selectedobject="selectedCountry_3" localdata="index.countries" searchfields="name" titlefield="name" minlength="1" inputclass="form-control " matchclass="highlight" placeholder="6S"/>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label class="col-sm-5 control-label">分辨率:</label>
+
+                                    <div class="col-sm-7">
+                                        <angucomplete id="phone_resolution" ng-model="anguFilter" url="http://myserver.com/api/user/find?s="  pause="100" selectedobject="selectedCountry_3" localdata="index.countries" searchfields="name" titlefield="name" minlength="1" inputclass="form-control " matchclass="highlight" placeholder="750*1334"/>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label class="col-sm-5 control-label">操作系统:</label>
+
+                                    <div class="col-sm-7">
+                                        <angucomplete id="os_version" ng-model="anguFilter" url="http://myserver.com/api/user/find?s="  pause="100" selectedobject="selectedCountry_3" localdata="index.countries" searchfields="name" titlefield="name" minlength="1" inputclass="form-control " matchclass="highlight" placeholder="9.3"/>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6" ng-show="index.offEndLable">
+                            <div class="form-group">
+                                <div class="col-sm-8" style="height:40px;"></div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label class="col-sm-5 control-label">网络及运营商:</label>
+                                <div class="col-sm-7 end" id="operator">
+                                    <!-- <span id="0" class="endSelect" ng-click="index.operatorExpression($event)">开</span>
+                                    <span id="1" class="endSelected" ng-click="index.operatorExpression($event)">关</span> -->
+                                    <input type="checkbox" name="my-checkbox-oper" checked  id="mySwitchB"  data-on-text="<span>开</span>" data-off-text="<span>关</span>"/>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="operatorShow">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <div class="col-sm-7" style="height:40px;"></div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label class="col-sm-5 control-label">联网方式:</label>
+
+                                    <div class="col-sm-7">
+                                        <select select2 id="myCreateNetworkMode"  class="form-control" ng-init="index.myCreateNetworkMode='0'" ng-change="index.createNetworkMode($event)"   ng-model="index.myCreateNetworkMode"  name="createNetworkMode">
+                                            
+                                            <option value="{{ item.id }}" ng-repeat="item in index.NetworkModeData">{{ item.name }}</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label class="col-sm-5 control-label">运营商:</label>
+
+                                    <div class="col-sm-7">
+                                        <angucomplete id="network_operator" ng-model="anguFilter" url="http://myserver.com/api/user/find?s="  pause="100" selectedobject="selectedCountry_3" localdata="index.countries" searchfields="name" titlefield="name" minlength="1" inputclass="form-control " matchclass="highlight" placeholder="UNICOM"/>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="modal-footer">
+                    <button ng-click="index.offExpression()" type="button" class="btn btn-light" data-dismiss="modal">取消</button>
+                    
+                    <button ng-click="index.modalBtn()" type="button" class="btn btn-dark" data-dismiss="modal">确定</button>
+                </div>
+            </form>
+        </div>
+    </div>

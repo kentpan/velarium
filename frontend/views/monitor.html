@@ -1,0 +1,11 @@
+<div class="sur-right" id="monitor" style="position: relative;">
+    <div class="monitor-toolsbar">
+        <button type="button" id="monitor-save" ng-click="monitor.save()"> 保存 </button>
+        <button type="button" id="monitor-addNode" ng-click="monitor.addNode()"> 添加节点 </button>
+    </div>
+    <div id="monitorContainer" canvas="monitor.canvasConf"></div>
+
+    <div id="echartsContainer">
+        <echarts ec-config="monitor.echartsConfig" style="display:block; width: 400px; height: 260px;"></echarts>
+    </div>
+</div>

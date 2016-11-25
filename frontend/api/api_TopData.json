@@ -1,0 +1,45 @@
+
+[
+	{
+		"region_data": [
+			{
+				"new_user_data": [
+					{
+						"北京": 2,
+						"天津": 300,
+						"上海": 300,
+						"other": 450
+					}
+				],
+				"active_user_data": [
+					{
+						"北京": 40,
+						"天津": 100,
+						"上海": 100,
+						"other": 480
+					}
+				]
+			}
+		],
+		"error_msg": "ok",
+		"phone_data": [
+			{
+				"new_user_data": [
+					{
+						"2": 302,
+						"10": 300,
+						"other": 450
+					}
+				],
+				"active_user_data": [
+					{
+						"2": 140,
+						"10": 100,
+						"other": 480
+					}
+				]
+			}
+		],
+		"error_code": 0
+	}
+]

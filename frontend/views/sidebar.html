@@ -1,0 +1,16 @@
+
+    <div class="sur-left">
+    	<div class="sidebar">
+    		<ul class="treeview">
+    			<li ng-repeat="item in items">
+                    <i ng-class="{sidebgUp:item.active==true,sidebgDown:item.active==false}" ></i>
+    				<span ng-if="item.country != ''" ng-click="showStates(item)">{{item.country}}</span>
+    				<ul ng-show="item.active">
+    					<li ng-repeat="sub in item.subs" ng-click="setActive(sub)">
+    						<a ng-href="{{sub.url}}" ng-class="{true: 'active', false: ''}[sub.active]">{{sub.name}}</a>
+    					</li>
+    				</ul>
+    			</li>
+    		</ul>
+    	</div>
+    </div>

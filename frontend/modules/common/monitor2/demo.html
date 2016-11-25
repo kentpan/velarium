@@ -1,0 +1,174 @@
+
+<html>
+<head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8;charset=utf-8">
+    <title>HTML5实现图片拖动，旋转，放大，拉伸等特效-xw素材网</title>
+        <style type="text/css" media="screen">
+        body    { font: 100% "Lucida Grande", "Trebuchet MS", Verdana, sans-serif; }
+        canvas  { background-color: transparent; border: 1px solid gray; top: 0; left: 0; position: absolute;}
+        canvas.resize-ne { cursor: ne-resize; }
+        canvas.resize-se { cursor: se-resize; }
+        canvas.resize-sw { cursor: sw-resize; }
+        canvas.resize-nw { cursor: nw-resize; }
+        canvas.move { cursor: move; }
+        canvas.default { cursor: default; }
+        img     { display: block; visibility: hidden; position: absolute; top: -1000; left: -1000; }
+        input   { margin-left: 20px; }
+        fieldset { width: 280px; float: left; }
+        .fieldset { width: 200px; float: left; }
+        #ft     { background-color: #eee; height: 70px; width: 99%; border-top: 1px solid #ccc; padding: 5px; position: absolute; top: 0; left: 0; }
+        #ft span { width: 100%; }
+    </style>
+</head>
+<body>
+    <div id="ft">
+        <div class="fieldset">
+            <input type="button" id="jpegbutton" value="Export to JPEG" />
+            <input type="button" id="pngbutton" value="Export to PNG (heavy)" />
+        </div>
+        <fieldset>
+            <legend>Photo</legend>
+            <span><input type="radio" name="some_name" value="" id="togglenone" /> None</span>
+            <span><input type="radio" name="some_name" value="" id="toggleborders" /> Border</span>
+            <span><input type="radio" name="some_name" value="" id="togglepolaroid" /> Polaroid</span>
+        </fieldset>
+        <span><input type="checkbox" name="some_name" value="" id="showcorners" /> 显示角落<span>
+        <span><input type="button" name="some_name" value="更换背景" id="switchBg" /><span>
+        <span><input type="button" name="some_name" value="更换图片" id="switchView" /><span>
+    </div><br>
+</body>
+<script src="../../../lib/js/jquery-2.0.3.min.js" charset="utf-8"></script>
+<script src="canvasEl.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript" charset="utf-8">
+    var CanvasBabys = function() {
+        var win = $(window);
+        var canvas1;
+        var img = {};
+        return {
+            init: function() {
+                var _this = this;
+                canvas1 = new Canvas.Element();
+                canvas1.init('canvid1',  { width: win.width() - 5, height: win.height() - 5 });
+                /*var oView = new Image();
+                    oView.onload = function () {
+                        console.log(win.height(), this.height, win.width(), this.width);
+                        img.view = new Canvas.Img(this, {
+                            top: (win.height()) / 2,
+                            left: (win.width()) / 2
+                        });
+
+                        canvas1.addImage(img.view);
+                        _this.showCorners.call(_this);
+                    };
+                    oView.src = 'imgs/7.jpg';*/
+                var oBg = new Image();
+                    oBg.onload = function () {
+                        img.bg = new Canvas.Img(this, {});
+                        canvas1.setCanvasBackground(img.bg);
+                    };
+                    oBg.src = 'imgs/bg1.jpg';
+                //img[img.length] = new Canvas.Img('img2', {});
+                //img[img.length] = new Canvas.Img('img3', {});
+                // img.bg = new Canvas.Img('bg', {});
+                //img[img.length] = new Canvas.Img('img4', {});
+                //img[img.length] = new Canvas.Img('img4', {});
+            
+                // @param array of images ToDo: individual images
+                
+                //canvas1.addImage(img[1]);
+                //canvas1.addImage(img[2]);
+                //canvas1.addImage(img[4]);
+ 
+                this.initEvents();
+            },
+            initEvents: function() {
+                var _this = this;
+                $('#switchBg').on('click', function (e) {
+                    _this.switchBg.call(_this, e);
+                });
+                $('#switchView').on('click', function (e) {
+                    _this.switchView.call(_this, e);
+                });
+                $('#showcorners').on('click', function (e) {
+                    _this.showCorners.call(_this, e);
+                });
+                $('#togglenone').on('click', function (e) {
+                    _this.toggleNone.call(_this, e);
+                });
+                $('#toggleborders').on('click', function (e) {
+                    _this.toggleBorders.call(_this, e);
+                });
+                $('#togglepolaroid').on('click', function (e) {
+                    _this.togglePolaroid.call(_this, e);
+                });
+                $('#pngbutton').on('click', function (e) {
+                    _this.convertTo.call(_this, 'png');
+                });
+                $('#jpegbutton').on('click', function (e) {
+                    _this.convertTo.call(_this, 'jpeg');
+                });
+            },
+            switchView: function() {
+                // canvas1.fillBackground = (!canvas1.fillBackground) ? true : false;
+                var _this = this;
+                var oView = new Image();
+                oView.onload = function () {
+                    var t = img.view.top;
+                    var l = img.view.left;
+                    var w = img.view.width;
+                    var h = img.view.height;
+                    var sx= img.view.scalex;
+                    var sy= img.view.scaley;
+                    var tt= img.view.theta;
+                    console.log(img.view);
+                    img.view = new Canvas.Img(this, {
+                        top: t,
+                        left: l,
+                        width: w,
+                        height: h,
+                        scalex: sx,
+                        scaley: sy,
+                        theta: tt
+                    });
+                    canvas1.changeImage(img.view);
+                    _this.showCorners.call(_this);
+                };
+                var list = [4, 5, 7, 8 , 9, 'bg'];
+                var rnd  = parseInt(Math.random() *  6, 10);
+                oView.src = 'imgs/' + list[rnd] + '.jpg';
+                // canvas1.renderAll();
+            },
+            switchBg: function() {
+                // canvas1.fillBackground = (!canvas1.fillBackground) ? true : false;
+
+                var oBg = new Image();
+                    oBg.onload = function () {
+                        img.bg = new Canvas.Img(this, {});
+                        canvas1.setCanvasBackground(img.bg);
+                    };
+                    var list = [4, 5, 7, 8 , 9, 'bg'];
+                    var rnd  = parseInt(Math.random() *  6, 10);
+                    oBg.src = 'imgs/' + list[rnd] + '.jpg';
+                // canvas1.renderAll();
+            },
+            
+            //! insert these functions to the library. No access to _aImages should be done from here
+            showCorners: function() {
+                this.cornersvisible = (this.cornersvisible) ? false : true;
+                for (var i = 0, l = canvas1._aImages.length; i < l; i += 1) {
+                    canvas1._aImages[i].setCornersVisibility(this.cornersvisible);
+                }
+                canvas1.renderAll();
+            }
+        }
+    }();
+    
+    
+    
+    
+    $(function () {
+        CanvasBabys.init.call(CanvasBabys);
+    });
+</script>
+</html>
+

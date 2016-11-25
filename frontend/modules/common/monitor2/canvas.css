@@ -1,0 +1,10 @@
+#canvasContainer {
+    position: relative;
+}
+#canvasContainer canvas {
+    background-color: transparent;
+    border: 0;
+    top: 0;
+    left: 0;
+    position: absolute;
+}

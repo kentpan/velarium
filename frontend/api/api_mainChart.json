@@ -1,0 +1,1947 @@
+
+
+
+
+
+    {
+        "total":35,
+        "data1": {
+            "20160608": {
+                "active_one_keep": {
+                    "num": 2,
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "search_user_dau": {
+                    "num": "3.000",
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "new_user_nums": {
+                    "num": 1,
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "search_nums": {
+                    "num": 4,
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "baiduapp_search_user_nums": {
+                    "num": 7,
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "active_user_nums": {
+                    "num": 2,
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "search_nums_wise": {
+                    "num": "1.250",
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "baiduapp_search_nums": {
+                    "num": 5,
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "newer_one_keep": {
+                    "num": 1,
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                }
+            },
+            "20160609": {
+                "active_one_keep": {
+                    "num": 2,
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "search_user_dau": {
+                    "num": "3.000",
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "new_user_nums": {
+                    "num": 1,
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "search_nums": {
+                    "num": 4,
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "baiduapp_search_user_nums": {
+                    "num": 7,
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "active_user_nums": {
+                    "num": 2,
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "search_nums_wise": {
+                    "num": "1.250",
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "baiduapp_search_nums": {
+                    "num": 5,
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "newer_one_keep": {
+                    "num": 1,
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                }
+            },
+            "20160610": {
+                "active_one_keep": {
+                    "num": 2,
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "search_user_dau": {
+                    "num": "3.000",
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "new_user_nums": {
+                    "num": 1,
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "search_nums": {
+                    "num": 4,
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "baiduapp_search_user_nums": {
+                    "num": 7,
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "active_user_nums": {
+                    "num": 2,
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "search_nums_wise": {
+                    "num": "1.250",
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "baiduapp_search_nums": {
+                    "num": 5,
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "newer_one_keep": {
+                    "num": 1,
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                }
+            },
+            "20160611": {
+                "active_one_keep": {
+                    "num": 2,
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "search_user_dau": {
+                    "num": "3.000",
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "new_user_nums": {
+                    "num": 1,
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "search_nums": {
+                    "num": 4,
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "baiduapp_search_user_nums": {
+                    "num": 7,
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "active_user_nums": {
+                    "num": 2,
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "search_nums_wise": {
+                    "num": "1.250",
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "baiduapp_search_nums": {
+                    "num": 5,
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "newer_one_keep": {
+                    "num": 1,
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                }
+            },
+            "20160612": {
+                "active_one_keep": {
+                    "num": 2,
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "search_user_dau": {
+                    "num": "3.000",
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "new_user_nums": {
+                    "num": 1,
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "search_nums": {
+                    "num": 4,
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "baiduapp_search_user_nums": {
+                    "num": 7,
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "active_user_nums": {
+                    "num": 2,
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "search_nums_wise": {
+                    "num": "1.250",
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "baiduapp_search_nums": {
+                    "num": 5,
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "newer_one_keep": {
+                    "num": 1,
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                }
+            },
+            "20160613": {
+                "active_one_keep": {
+                    "num": 2,
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "search_user_dau": {
+                    "num": "3.000",
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "new_user_nums": {
+                    "num": 1,
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "search_nums": {
+                    "num": 4,
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "baiduapp_search_user_nums": {
+                    "num": 7,
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "active_user_nums": {
+                    "num": 2,
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "search_nums_wise": {
+                    "num": "1.250",
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "baiduapp_search_nums": {
+                    "num": 5,
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "newer_one_keep": {
+                    "num": 1,
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                }
+            },
+            "20160614": {
+                "active_one_keep": {
+                    "num": 2,
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "search_user_dau": {
+                    "num": "3.000",
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "new_user_nums": {
+                    "num": 1,
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "search_nums": {
+                    "num": 4,
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "baiduapp_search_user_nums": {
+                    "num": 7,
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "active_user_nums": {
+                    "num": 2,
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "search_nums_wise": {
+                    "num": "1.250",
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "baiduapp_search_nums": {
+                    "num": 5,
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "newer_one_keep": {
+                    "num": 1,
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                }
+            },
+            "20160615": {
+                "active_one_keep": {
+                    "num": 2,
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "search_user_dau": {
+                    "num": "3.000",
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "new_user_nums": {
+                    "num": 1,
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "search_nums": {
+                    "num": 4,
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "baiduapp_search_user_nums": {
+                    "num": 7,
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "active_user_nums": {
+                    "num": 2,
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "search_nums_wise": {
+                    "num": "1.250",
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "baiduapp_search_nums": {
+                    "num": 5,
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "newer_one_keep": {
+                    "num": 1,
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                }
+            },
+            "20160616": {
+                "active_one_keep": {
+                    "num": 2,
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "search_user_dau": {
+                    "num": "3.000",
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "new_user_nums": {
+                    "num": 1,
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "search_nums": {
+                    "num": 4,
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "baiduapp_search_user_nums": {
+                    "num": 7,
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "active_user_nums": {
+                    "num": 2,
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "search_nums_wise": {
+                    "num": "1.250",
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "baiduapp_search_nums": {
+                    "num": 5,
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "newer_one_keep": {
+                    "num": 1,
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                }
+            },
+            "20160617": {
+                "active_one_keep": {
+                    "num": 2,
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "search_user_dau": {
+                    "num": "3.000",
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "new_user_nums": {
+                    "num": 1,
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "search_nums": {
+                    "num": 4,
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "baiduapp_search_user_nums": {
+                    "num": 7,
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "active_user_nums": {
+                    "num": 2,
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "search_nums_wise": {
+                    "num": "1.250",
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "baiduapp_search_nums": {
+                    "num": 5,
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "newer_one_keep": {
+                    "num": 1,
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                }
+            },
+            "20160618": {
+                "active_one_keep": {
+                    "num": 2,
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "search_user_dau": {
+                    "num": "3.000",
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "new_user_nums": {
+                    "num": 1,
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "search_nums": {
+                    "num": 4,
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "baiduapp_search_user_nums": {
+                    "num": 7,
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "active_user_nums": {
+                    "num": 2,
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "search_nums_wise": {
+                    "num": "1.250",
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "baiduapp_search_nums": {
+                    "num": 5,
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "newer_one_keep": {
+                    "num": 1,
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                }
+            },
+            "20160619": {
+                "active_one_keep": {
+                    "num": 2,
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "search_user_dau": {
+                    "num": "3.000",
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "new_user_nums": {
+                    "num": 1,
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "search_nums": {
+                    "num": 4,
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "baiduapp_search_user_nums": {
+                    "num": 7,
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "active_user_nums": {
+                    "num": 2,
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "search_nums_wise": {
+                    "num": "1.250",
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "baiduapp_search_nums": {
+                    "num": 5,
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "newer_one_keep": {
+                    "num": 1,
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                }
+            },
+            "20160620": {
+                "active_one_keep": {
+                    "num": 2,
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "search_user_dau": {
+                    "num": "3.000",
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "new_user_nums": {
+                    "num": 1,
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "search_nums": {
+                    "num": 4,
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "baiduapp_search_user_nums": {
+                    "num": 7,
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "active_user_nums": {
+                    "num": 2,
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "search_nums_wise": {
+                    "num": "1.250",
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "baiduapp_search_nums": {
+                    "num": 5,
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "newer_one_keep": {
+                    "num": 1,
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                }
+            },
+            "20160621": {
+                "active_one_keep": {
+                    "num": 2,
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "search_user_dau": {
+                    "num": "3.000",
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "new_user_nums": {
+                    "num": 1,
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "search_nums": {
+                    "num": 4,
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "baiduapp_search_user_nums": {
+                    "num": 7,
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "active_user_nums": {
+                    "num": 2,
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "search_nums_wise": {
+                    "num": "1.250",
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "baiduapp_search_nums": {
+                    "num": 5,
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "newer_one_keep": {
+                    "num": 1,
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                }
+            },
+            "20160622": {
+                "active_one_keep": {
+                    "num": 2,
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "search_user_dau": {
+                    "num": "3.000",
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "new_user_nums": {
+                    "num": 1,
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "search_nums": {
+                    "num": 4,
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "baiduapp_search_user_nums": {
+                    "num": 7,
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "active_user_nums": {
+                    "num": 2,
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "search_nums_wise": {
+                    "num": "1.250",
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "baiduapp_search_nums": {
+                    "num": 5,
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "newer_one_keep": {
+                    "num": 1,
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                }
+            },
+            "20160623": {
+                "active_one_keep": {
+                    "num": 2,
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "search_user_dau": {
+                    "num": "3.000",
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "new_user_nums": {
+                    "num": 1,
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "search_nums": {
+                    "num": 4,
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "baiduapp_search_user_nums": {
+                    "num": 7,
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "active_user_nums": {
+                    "num": 2,
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "search_nums_wise": {
+                    "num": "1.250",
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "baiduapp_search_nums": {
+                    "num": 5,
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "newer_one_keep": {
+                    "num": 1,
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                }
+            },
+            "20160624": {
+                "active_one_keep": {
+                    "num": 2,
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "search_user_dau": {
+                    "num": "3.000",
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "new_user_nums": {
+                    "num": 1,
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "search_nums": {
+                    "num": 4,
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "baiduapp_search_user_nums": {
+                    "num": 7,
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "active_user_nums": {
+                    "num": 2,
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "search_nums_wise": {
+                    "num": "1.250",
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "baiduapp_search_nums": {
+                    "num": 5,
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "newer_one_keep": {
+                    "num": 1,
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                }
+            },
+            "20160625": {
+                "active_one_keep": {
+                    "num": 2,
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "search_user_dau": {
+                    "num": "3.000",
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "new_user_nums": {
+                    "num": 1,
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "search_nums": {
+                    "num": 4,
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "baiduapp_search_user_nums": {
+                    "num": 7,
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "active_user_nums": {
+                    "num": 2,
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "search_nums_wise": {
+                    "num": "1.250",
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "baiduapp_search_nums": {
+                    "num": 5,
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "newer_one_keep": {
+                    "num": 1,
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                }
+            },
+            "20160626": {
+                "active_one_keep": {
+                    "num": 2,
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "search_user_dau": {
+                    "num": "3.000",
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "new_user_nums": {
+                    "num": 1,
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "search_nums": {
+                    "num": 4,
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "baiduapp_search_user_nums": {
+                    "num": 7,
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "active_user_nums": {
+                    "num": 2,
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "search_nums_wise": {
+                    "num": "1.250",
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "baiduapp_search_nums": {
+                    "num": 5,
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "newer_one_keep": {
+                    "num": 1,
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                }
+            },
+            "20160627": {
+                "active_one_keep": {
+                    "num": 2,
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "search_user_dau": {
+                    "num": "3.000",
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "new_user_nums": {
+                    "num": 1,
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "search_nums": {
+                    "num": 4,
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "baiduapp_search_user_nums": {
+                    "num": 7,
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "active_user_nums": {
+                    "num": 2,
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "search_nums_wise": {
+                    "num": "1.250",
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "baiduapp_search_nums": {
+                    "num": 5,
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "newer_one_keep": {
+                    "num": 1,
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                }
+            },
+            "20160628": {
+                "active_one_keep": {
+                    "num": 2,
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "search_user_dau": {
+                    "num": "3.000",
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "new_user_nums": {
+                    "num": 1,
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "search_nums": {
+                    "num": 4,
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "baiduapp_search_user_nums": {
+                    "num": 7,
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "active_user_nums": {
+                    "num": 2,
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "search_nums_wise": {
+                    "num": "1.250",
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "baiduapp_search_nums": {
+                    "num": 5,
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "newer_one_keep": {
+                    "num": 1,
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                }
+            },
+            "20160629": {
+                "active_one_keep": {
+                    "num": 2,
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "search_user_dau": {
+                    "num": "3.000",
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "new_user_nums": {
+                    "num": 1,
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "search_nums": {
+                    "num": 4,
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "baiduapp_search_user_nums": {
+                    "num": 7,
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "active_user_nums": {
+                    "num": 2,
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "search_nums_wise": {
+                    "num": "1.250",
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "baiduapp_search_nums": {
+                    "num": 5,
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "newer_one_keep": {
+                    "num": 1,
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                }
+            },
+            "20160630": {
+                "active_one_keep": {
+                    "num": 2,
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "search_user_dau": {
+                    "num": "3.000",
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "new_user_nums": {
+                    "num": 1,
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "search_nums": {
+                    "num": 4,
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "baiduapp_search_user_nums": {
+                    "num": 7,
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "active_user_nums": {
+                    "num": 2,
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "search_nums_wise": {
+                    "num": "1.250",
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "baiduapp_search_nums": {
+                    "num": 5,
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "newer_one_keep": {
+                    "num": 1,
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                }
+            },
+            "20160701": {
+                "active_one_keep": {
+                    "num": 2,
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "search_user_dau": {
+                    "num": "3.000",
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "new_user_nums": {
+                    "num": 1,
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "search_nums": {
+                    "num": 4,
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "baiduapp_search_user_nums": {
+                    "num": 7,
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "active_user_nums": {
+                    "num": 2,
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "search_nums_wise": {
+                    "num": "1.250",
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "baiduapp_search_nums": {
+                    "num": 5,
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "newer_one_keep": {
+                    "num": 1,
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                }
+            },
+            "20160702": {
+                "active_one_keep": {
+                    "num": 2,
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "search_user_dau": {
+                    "num": "3.000",
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "new_user_nums": {
+                    "num": 1,
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "search_nums": {
+                    "num": 4,
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "baiduapp_search_user_nums": {
+                    "num": 7,
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "active_user_nums": {
+                    "num": 2,
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "search_nums_wise": {
+                    "num": "1.250",
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "baiduapp_search_nums": {
+                    "num": 5,
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "newer_one_keep": {
+                    "num": 1,
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                }
+            },
+            "20160703": {
+                "active_one_keep": {
+                    "num": 2,
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "search_user_dau": {
+                    "num": "3.000",
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "new_user_nums": {
+                    "num": 1,
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "search_nums": {
+                    "num": 4,
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "baiduapp_search_user_nums": {
+                    "num": 7,
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "active_user_nums": {
+                    "num": 2,
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "search_nums_wise": {
+                    "num": "1.250",
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "baiduapp_search_nums": {
+                    "num": 5,
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "newer_one_keep": {
+                    "num": 1,
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                }
+            },
+            "20160704": {
+                "active_one_keep": {
+                    "num": 2,
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "search_user_dau": {
+                    "num": "3.000",
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "new_user_nums": {
+                    "num": 1,
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "search_nums": {
+                    "num": 4,
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "baiduapp_search_user_nums": {
+                    "num": 7,
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "active_user_nums": {
+                    "num": 2,
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "search_nums_wise": {
+                    "num": "1.250",
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "baiduapp_search_nums": {
+                    "num": 5,
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "newer_one_keep": {
+                    "num": 1,
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                }
+            },
+            "20160705": {
+                "active_one_keep": {
+                    "num": 2,
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "search_user_dau": {
+                    "num": "3.000",
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "new_user_nums": {
+                    "num": 1,
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "search_nums": {
+                    "num": 4,
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "baiduapp_search_user_nums": {
+                    "num": 7,
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "active_user_nums": {
+                    "num": 2,
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "search_nums_wise": {
+                    "num": "1.250",
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "baiduapp_search_nums": {
+                    "num": 5,
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "newer_one_keep": {
+                    "num": 1,
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                }
+            },
+            "20160706": {
+                "active_one_keep": {
+                    "num": 2,
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "search_user_dau": {
+                    "num": "3.000",
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "new_user_nums": {
+                    "num": 1,
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "search_nums": {
+                    "num": 4,
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "baiduapp_search_user_nums": {
+                    "num": 7,
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "active_user_nums": {
+                    "num": 2,
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "search_nums_wise": {
+                    "num": "1.250",
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "baiduapp_search_nums": {
+                    "num": 5,
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "newer_one_keep": {
+                    "num": 1,
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                }
+            },
+            "20160708": {
+                "active_one_keep": {
+                    "num": 2,
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "search_user_dau": {
+                    "num": "3.000",
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "new_user_nums": {
+                    "num": 1,
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "search_nums": {
+                    "num": 4,
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "baiduapp_search_user_nums": {
+                    "num": 7,
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "active_user_nums": {
+                    "num": 2,
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "search_nums_wise": {
+                    "num": "1.250",
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "baiduapp_search_nums": {
+                    "num": 5,
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "newer_one_keep": {
+                    "num": 1,
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                }
+            },
+            "20160709": {
+                "active_one_keep": {
+                    "num": 2,
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "search_user_dau": {
+                    "num": "3.000",
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "new_user_nums": {
+                    "num": 1,
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "search_nums": {
+                    "num": 4,
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "baiduapp_search_user_nums": {
+                    "num": 7,
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "active_user_nums": {
+                    "num": 2,
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "search_nums_wise": {
+                    "num": "1.250",
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "baiduapp_search_nums": {
+                    "num": 5,
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "newer_one_keep": {
+                    "num": 1,
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                }
+            },
+            "20160710": {
+                "active_one_keep": {
+                    "num": 2,
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "search_user_dau": {
+                    "num": "3.000",
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "new_user_nums": {
+                    "num": 1,
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "search_nums": {
+                    "num": 4,
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "baiduapp_search_user_nums": {
+                    "num": 7,
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "active_user_nums": {
+                    "num": 2,
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "search_nums_wise": {
+                    "num": "1.250",
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "baiduapp_search_nums": {
+                    "num": 5,
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "newer_one_keep": {
+                    "num": 1,
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                }
+            },
+            "20160710": {
+                "active_one_keep": {
+                    "num": 2,
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "search_user_dau": {
+                    "num": "3.000",
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "new_user_nums": {
+                    "num": 1,
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "search_nums": {
+                    "num": 4,
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "baiduapp_search_user_nums": {
+                    "num": 7,
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "active_user_nums": {
+                    "num": 2,
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "search_nums_wise": {
+                    "num": "1.250",
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "baiduapp_search_nums": {
+                    "num": 5,
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "newer_one_keep": {
+                    "num": 1,
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                }
+            },
+            "20160711": {
+                "active_one_keep": {
+                    "num": 2,
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "search_user_dau": {
+                    "num": "3.000",
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "new_user_nums": {
+                    "num": 1,
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "search_nums": {
+                    "num": 4,
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "baiduapp_search_user_nums": {
+                    "num": 7,
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "active_user_nums": {
+                    "num": 2,
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "search_nums_wise": {
+                    "num": "1.250",
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "baiduapp_search_nums": {
+                    "num": 5,
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "newer_one_keep": {
+                    "num": 1,
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                }
+            },
+            "20160712": {
+                "active_one_keep": {
+                    "num": 2,
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "search_user_dau": {
+                    "num": "3.000",
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "new_user_nums": {
+                    "num": 1,
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "search_nums": {
+                    "num": 4,
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "baiduapp_search_user_nums": {
+                    "num": 7,
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "active_user_nums": {
+                    "num": 2,
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "search_nums_wise": {
+                    "num": "1.250",
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "baiduapp_search_nums": {
+                    "num": 5,
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "newer_one_keep": {
+                    "num": 1,
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                }
+            },
+             "20160710": {
+                "active_one_keep": {
+                    "num": 2,
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "search_user_dau": {
+                    "num": "3.000",
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "new_user_nums": {
+                    "num": 1,
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "search_nums": {
+                    "num": 4,
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "baiduapp_search_user_nums": {
+                    "num": 7,
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "active_user_nums": {
+                    "num": 2,
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "search_nums_wise": {
+                    "num": "1.250",
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "baiduapp_search_nums": {
+                    "num": 5,
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "newer_one_keep": {
+                    "num": 1,
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                }
+            },
+            "20160711": {
+                "active_one_keep": {
+                    "num": 2,
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "search_user_dau": {
+                    "num": "3.000",
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "new_user_nums": {
+                    "num": 1,
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "search_nums": {
+                    "num": 4,
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "baiduapp_search_user_nums": {
+                    "num": 7,
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "active_user_nums": {
+                    "num": 2,
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "search_nums_wise": {
+                    "num": "1.250",
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "baiduapp_search_nums": {
+                    "num": 5,
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "newer_one_keep": {
+                    "num": 1,
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                }
+            },
+            "20160712": {
+                "active_one_keep": {
+                    "num": 2,
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "search_user_dau": {
+                    "num": "3.000",
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "new_user_nums": {
+                    "num": 1,
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "search_nums": {
+                    "num": 4,
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "baiduapp_search_user_nums": {
+                    "num": 7,
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "active_user_nums": {
+                    "num": 2,
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "search_nums_wise": {
+                    "num": "1.250",
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "baiduapp_search_nums": {
+                    "num": 5,
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                },
+                "newer_one_keep": {
+                    "num": 1,
+                    "tongbi": "1.000",
+                    "huanbi": "1.000"
+                }
+            }
+        },
+        "error_code": 0,
+        "data2": {
+            "title": [
+                "20160608",
+                "20160609",
+                "20160610"
+            ],
+            "search_user_dau": [
+                "3.000",
+                "3.000",
+                "3.000"
+            ],
+            "active_one_keep": [
+                "2",
+                "2",
+                "2"
+            ],
+            "new_user_nums": [
+                "1",
+                "2",
+                "3"
+            ],
+            "search_nums": [
+                "4",
+                "4",
+                "4"
+            ],
+            "baiduapp_search_user_nums": [
+                "7",
+                "7",
+                "7"
+            ],
+            "active_user_nums": [
+                "2",
+                "2",
+                "2"
+            ],
+            "search_nums_wise": [
+                "1.250",
+                "1.250",
+                "1.250"
+            ],
+            "baiduapp_search_nums": [
+                "5",
+                "5",
+                "5"
+            ],
+            "newer_one_keep": [
+                "1",
+                "1",
+                "1"
+            ]
+        },
+        "data3": {
+            "baiduapp_search_user_nums_huanbi": [
+                "1.000",
+                "1.000",
+                "1.000"
+            ],
+            "active_one_keep_huanbi": [
+                "1.000",
+                "1.000",
+                "1.000"
+            ],
+            "active_user_nums_huanbi": [
+                "1.000",
+                "1.000",
+                "1.000"
+            ],
+            "baiduapp_search_nums_huanbi": [
+                "1.000",
+                "1.000",
+                "1.000"
+            ],
+            "baiduapp_search_user_nums_tongbi": [
+                "1.000",
+                "1.000",
+                "1.000"
+            ],
+            "search_nums_huanbi": [
+                "1.000",
+                "1.000",
+                "1.000"
+            ],
+            "active_one_keep_tongbi": [
+                "1.000",
+                "1.000",
+                "1.000"
+            ],
+            "title": [
+                "20160608",
+                "20160609",
+                "20160610"
+            ],
+            "new_user_nums_tongbi": [
+                "1.000",
+                "2.000",
+                "3.000"
+            ],
+            "search_nums_tongbi": [
+                "1.000",
+                "1.000",
+                "1.000"
+            ],
+            "baiduapp_search_nums_tongbi": [
+                "1.000",
+                "1.000",
+                "1.000"
+            ],
+            "search_nums_wise_huanbi": [
+                "1.000",
+                "1.000",
+                "1.000"
+            ],
+            "active_user_nums_tongbi": [
+                "1.000",
+                "1.000",
+                "1.000"
+            ],
+            "search_user_dau_tongbi": [
+                "1.000",
+                "1.000",
+                "1.000"
+            ],
+            "newer_one_keep_huanbi": [
+                "1.000",
+                "1.000",
+                "1.000"
+            ],
+            "search_nums_wise_tongbi": [
+                "1.000",
+                "1.000",
+                "1.000"
+            ],
+            "newer_one_keep_tongbi": [
+                "1.000",
+                "1.000",
+                "1.000"
+            ],
+            "new_user_nums_huanbi": [
+                "4.000",
+                "51.000",
+                "6.000"
+            ],
+            "search_user_dau_huanbi": [
+                "1.000",
+                "1.000",
+                "1.000"
+            ]
+        },
+        "error_msg": "ok"
+    }
