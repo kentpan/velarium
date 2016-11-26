@@ -1,21 +1,34 @@
 /**
  * Created by liekkas.zeng on 2015/1/7.
  */
-angular.module(window.ProjectName).directive('echarts', function ($rootScope) {
+angular.module(window.ProjectName).directive('echarts', function ($timeout) {
         return {
             link: function (scope, element, attrs) {
+                var runOnce = false;
                 var refreshChart = function (val) {
-                    console.log(val);
+                    if (!!runOnce) {
+                        return;
+                    }
+                    runOnce = true;
                     var config = scope.CONFIG.config;
                     var option = scope.CONFIG.option;
+                    var cache  = scope.CONFIG._echartsCache;
                     var theme = (config && config.theme) ? config.theme : 'default';
-                    var chart = echarts.init(element[0], theme);
+                    var chart = echarts.init(element[0], theme, (config.position || {}));
                     (config && !config.dataLoaded) && chart.showLoading();
                     if (config && !!config.dataLoaded) {
-                        chart.setOption(option, false, false);
-                        chart.resize();
+                        chart.setOption(option);
+                        if (!!config.position) {
+                            chart.resize(config.position);
+                        } else {
+                            chart.resize();
+                        }
                         chart.hideLoading();
-                        !!scope.CONFIG.callback && scope.CONFIG.callback(chart);
+                        !!scope.CONFIG.command && $timeout(function () {
+                            chart.CONFIG = scope.CONFIG;
+                            runOnce = false;
+                            return scope.CONFIG.command(chart);
+                        });
                     }
                     if (config && config.event) {
                         if (angular.isArray(config.event)) {
@@ -32,7 +45,8 @@ angular.module(window.ProjectName).directive('echarts', function ($rootScope) {
                 // event 定义事件
                 // theme 主题名称
                 // dataLoaded 数据是否加载
-                scope.$watch('CONFIG', refreshChart, true);
+                scope.$watch('CONFIG.position', refreshChart, true);
+                scope.$watch('CONFIG.config', refreshChart, true);
                // scope.$on('Monitor:renewEcharts', refreshChart);
             },
             scope: {

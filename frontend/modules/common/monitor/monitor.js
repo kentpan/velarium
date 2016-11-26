@@ -44,6 +44,18 @@ angular.module(ProjectName)
                         <li><a>改为红色</a></li>\
                         <li><a>改为默认颜色</a></li>\
                     </ul>\
+                    <ul id="monitor-echartsMenu" ng-show="radarMonitor.echartsMenu.status" style="left:{{radarMonitor.echartsMenu.x}};top:{{radarMonitor.echartsMenu.y}}">\
+                        <li><a>取消</a></li>\
+                        <li><a>删除图表</a></li>\
+                        <li><a>配置</a></li>\
+                    </ul>\
+                    <ul id="monitor-echartsConfigContainer" ng-show="radarMonitor.echartsConfig.status" style="left:{{radarMonitor.echartsConfig.x}};top:{{radarMonitor.echartsConfig.y}}">\
+                        <li><span>开启实时监控：</span> <label><input type="checkbox" name="rtopen" ng-checked="MonitorController.getEchartsData.rtopen" ng-click="MonitorController.setEchartsRtopen($event)"></label></li>\
+                        <li><span>配置数据接口：</span> <input type="text" name="rtapi" ng-model="MonitorController.getEchartsData.rtapi"></li>\
+                        <li><span>配置数据接口：</span> </li>\
+                        <li><span>配置数据接口：</span> </li>\
+                        <li class="bottom"><button type="button" ng-click="MonitorController.saveConfig()">确定</button> <button type="button" ng-click="radarMonitor.setCancel()">取消</button></li>\
+                    </ul>\
                 </div>\
             ',
             controller: function ($scope) {
@@ -70,6 +82,20 @@ angular.module(ProjectName)
                     x: '0px',
                     y: '0px'
                 };
+                this.echartsMenu = {
+                    status: false,
+                    x: '0px',
+                    y: '0px'
+                };
+                this.echartsConfig = {
+                    status: false,
+                    x: '0px',
+                    y: '0px'
+                };
+                this.setCancel = function () {
+                    this.echartsConfig.status = false;
+                };
+              //  this.echartsConfig = angular.copy(this._echartsConfig);
             },
             controllerAs: 'radarMonitor',
             link: function ($scope, $element, $attrs, $ctrl) {
@@ -80,6 +106,7 @@ angular.module(ProjectName)
                         tmpx,
                         tmpy,
                         validation,
+                        pixel = 2, //调整清晰度, 1|2, 2有坐标bug
                         strr = '';
                     return {
                         init: function () {
@@ -89,8 +116,12 @@ angular.module(ProjectName)
                             $timeout(function () {
                                 var rootDom = $('#' + (conf.root || 'monitorContainer'));
                                 var canvas = document.getElementById($ctrl.canvas);
-                                canvas.height = rootDom.height();
-                                canvas.width = rootDom.width();
+                                var w = rootDom.width();
+                                var h = rootDom.height();
+                                canvas.height = h * pixel;
+                                canvas.width = w * pixel;
+                                canvas.style.height = h + 'px';
+                                canvas.style.width = w + 'px';
                                 var scene = new JTopo.Scene();
                                 scene.background = conf.bg || '';
                                 var stage = new JTopo.Stage(canvas);
@@ -102,10 +133,12 @@ angular.module(ProjectName)
                                 _this._initEvent();
                                 _this.render();
                                 conf.mode && (_this.Stage.mode = conf.mode);
-                                console.log('scene:', _this.Scene, '\nstage: ', _this.Stage);
+                                _this.currentNode = currentNode;
+                                console.log('scene:', _this.Scene, '\n', _this.Stage.width+'stage: ', _this.Stage);
                             }, 0);
                             return this;
                         },
+                        _nodesCache: {},
                         load: function () {
                             var _this = this;
                             fetchService.get([this.config.load])
@@ -114,8 +147,7 @@ angular.module(ProjectName)
                                     angular.forEach(data, function (v, k) {
                                         switch (v.elementType) {
                                             case 'echart':
-                                                !_this._echartsQueue && (_this._echartsQueue = []);
-                                                _this._echartsQueue.push(v);
+                                                _this._loadEcharts(v);
                                                 break;
                                             case 'node':
                                                 if (v.level <= 6) {
@@ -144,21 +176,66 @@ angular.module(ProjectName)
                         autoFixed: function () {
                             return this.Stage.centerAndZoom();
                         },
-                        _createEcharts: function (oEc) {
-                            var _this = this;
-                            if (!this._echartsQueue || !this._echartsQueue.length) {
-                                return;
-                            }
+                        _loadEcharts: function (data) {
+                            data.width = data.width/pixel;
+                            data.height = data.height/pixel;
+                            return $scope.$parent.monitor.addEcharts(data.echartType, data);
+                        },
+                        _realTimeEcharts: function (oEc) {
+                          //  var _this = this;
+                            var node;
+                            var ecid = oEc.id;
                           //  var oImg = oEc.getDataURL();
-                            var oImg = oEc.getRenderedCanvas();
+                            var oImg = oEc.getRenderedCanvas({pixelRatio: pixel});
+                            var oImgStr = oEc.getDataURL({pixelRatio: pixel});
+                            if (!!this._nodesCache[ecid]) {
+                                node = this._nodesCache[ecid];
+                                node.setImage(oImg, true);
+                                if (!node.Echarts) {
+                                    node.Echarts = oEc;
+                                }
+                             //   node.elementType = 'echart';
+                                node.Image = oImgStr;
+                                if (oEc.CONFIG.config.position) {
+                                    node.setSize(oEc.CONFIG.config.position.width * pixel, oEc.CONFIG.config.position.height * pixel);
+                                  //  node.width = oEc.CONFIG.config.position.width;
+                                   // node.height = oEc.CONFIG.config.position.height;
+                                }
+                            } else {
+                                node = new JTopo.Node('');
+                                node.serializedProperties.push('id');
+                                node.serializedProperties.push('ecid');
+                                node.serializedProperties.push('level');
+                                node.serializedProperties.push('Echarts');
+                                node.serializedProperties.push('echartType');
+                                node.setLocation(0, 0);
+                                node.id = ecid;
+                                node.x = oEc.CONFIG.config.offset ? oEc.CONFIG.config.offset.x : 0;
+                                node.y = oEc.CONFIG.config.offset ? oEc.CONFIG.config.offset.y : 0;
+                                node.width = oEc.CONFIG.config.position.width * pixel;
+                                node.height = oEc.CONFIG.config.position.height * pixel;
+                                node.ecid = ecid;
+                                node.rtopen = oEc.CONFIG.config.rtopen || 0;
+                                node.rtapi = oEc.CONFIG.config.rtapi || '';
+                                node.echartType = oEc.echartType;
+                                node.option = oEc.CONFIG.option;
+                                node.level = 1;
+                                node.Echarts = oEc;
+                                node.setImage(oImg, true);
+                                node.elementType = 'echart';
+                                node.Image = oImgStr;
+                                node.textPosition = 'Middle_Center';
+                                node.fontColor = '0, 0, 0';
+                                this.Scene.add(node);
+                                console.log(oEc);
+                            }
+                            this._nodesCache[ecid] = node;
                           //  oEc.dispose();
-                            angular.forEach(this._echartsQueue, function (v) {
-                                _this._createNode(v.x, v.y, 'echart', oImg, v.textPosition, v.level, v.larm, oEc.getDataURL());
-                            });
+                            return node;
                         },
                         _NodehandlerMouseup: function (event, node) {
-                           // $("#linkmenu").hide();
                             $ctrl.linkMenu.status = false;
+                            $ctrl.echartsMenu.status = false;
                             currentNode = node;
                             tmpx = event.pageX - this.config.x + 30;
                             tmpy = event.pageY - this.config.y + 30;
@@ -178,6 +255,7 @@ angular.module(ProjectName)
                         _linkHandlerMouseup: function (event, link) {
                             currentNode = link;
                             $ctrl.nodeMenu.status = false;
+                            $ctrl.echartsMenu.status = false;
                             $ctrl.linkMenu.x = event.pageX + 10 + 'px';
                             $ctrl.linkMenu.y = event.pageY - this.config.y + 10 + 'px';
                             $ctrl.linkMenu.status = true;
@@ -251,7 +329,13 @@ angular.module(ProjectName)
                         render: function () {
                             return this.Stage.add(this.Scene);
                         },
+                        remove: function () {
+                            delete this._nodesCache[currentNode.id];
+                            this.Scene.remove(currentNode);
+                            currentNode = null;
+                        },
                         clear: function () {
+                            this._nodesCache = {};
                             return this.Stage.clear();
                         },
                         _toolsHandler: function (event) {
@@ -273,11 +357,11 @@ angular.module(ProjectName)
                                 case '添加连线':
                                     validation = true;
                                     break;
-                                    break;
                                 case '复制节点':
                                     this._createNode(tmpx, tmpy, currentNode.text, currentNode.Image, 'Bottom_Center');
                                     break;
                                 case '删除节点':
+                                case '删除图表':
                                     this.Scene.remove(currentNode);
                                     currentNode = null;
                                     break;
@@ -306,11 +390,68 @@ angular.module(ProjectName)
                                 case '改为默认颜色':
                                     currentNode.strokeColor = '0, 200, 255';
                                     break;
+                                // monitor-echartsMenu
+                                case '配置':
+                                    return this._configEcharts(event);
                             }
                             $timeout(function () {
                                 $ctrl.nodeMenu.status = false;
                                 $ctrl.linkMenu.status = false;
+                                $ctrl.echartsMenu.status = false;
                             });
+                        },
+                        getEchartsData: function () {
+                          //  currentNode = angular.extend($ctrl.echartsConfig.data);
+                            if (!currentNode) {
+                                return {
+                                    rtopen: 0,
+                                    rtapi: ''
+                                };
+                            }
+                            if (!currentNode.rtopen) {
+                                currentNode.rtopen = 0;
+                            }
+                            if (!currentNode.rtapi) {
+                                currentNode.rtapi = '';
+                            }
+                            return {
+                                rtopen: currentNode.rtopen,
+                                rtapi: currentNode.rtapi
+                            };
+                        }(),
+                        setEchartsRtopen: function (event) {
+                            var dom = event.target || event.srcElement;
+                            currentNode.rtopen = ~~dom.checked;
+                            this.getEchartsData.rtopen = currentNode.rtopen;
+                        },
+                        _configEcharts: function () {
+                            var _this = this;
+                            $scope.$apply(function () {
+                                _this.getEchartsData.rtopen = currentNode.Echarts.CONFIG.config.rtopen || 0;
+                                _this.getEchartsData.rtapi = currentNode.Echarts.CONFIG.config.rtapi || '';
+                                $ctrl.nodeMenu.status = false;
+                                $ctrl.linkMenu.status = false;
+                                $ctrl.echartsMenu.status = false;
+                                $ctrl.echartsConfig.x = event.pageX - _this.config.x + 10 + 'px';
+                                $ctrl.echartsConfig.y = event.pageY - _this.config.y + 10 + 'px';
+                                $ctrl.echartsConfig.status = true;
+                            });
+                        },
+                        _echarthandlerMouseup: function (event, node) {
+                            if (event.button === 0) {
+                                var opt = {
+                                    width: node.width,
+                                    height: node.height
+                                };
+                                node.Echarts.CONFIG.config.position = opt;
+                            } else if (event.button === 2) {
+                                currentNode = node;
+                                $ctrl.echartsMenu.x = event.pageX - this.config.x + 10 + 'px';
+                                $ctrl.echartsMenu.y = event.pageY - this.config.y + 10 + 'px';
+                                $ctrl.echartsMenu.status = true;
+
+                            }
+                            // $scope.$broadcast('Monitor:resetEcharts', opt);
                         },
                         _eventController: function (event) {
                             var type = event.type;
@@ -319,15 +460,27 @@ angular.module(ProjectName)
                                 case (type === 'mouseup' && !e.elementType): //空白canvas单击事件
                                     $ctrl.nodeMenu.status = false;
                                     $ctrl.linkMenu.status = false;
+                                    $ctrl.echartsMenu.status = false;
+                                    $ctrl.echartsConfig.status = false;
+                                    break;
+                                case (type === 'mouseup' && e.elementType === 'echart'): //点击事件&& echart
+                                    $ctrl.nodeMenu.status = false;
+                                    $ctrl.linkMenu.status = false;
+                                    $ctrl.echartsConfig.status = false;
+                                    this._echarthandlerMouseup(event, e);
                                     break;
                                 case (type === 'mouseup' && e.elementType === 'node'): //右键点击事件&& node
                                     $ctrl.nodeMenu.status = false;
                                     $ctrl.linkMenu.status = false;
+                                    $ctrl.echartsMenu.status = false;
+                                    $ctrl.echartsConfig.status = false;
                                     event.button === 2 ? this._NodehandlerMouseup(event, e) : this._nodeHandlerClick(event, e);
                                     break;
                                 case (type === 'mouseup' && e.elementType === 'link'): //右键点击事件&& link
                                     $ctrl.nodeMenu.status = false;
                                     $ctrl.linkMenu.status = false;
+                                    $ctrl.echartsMenu.status = false;
+                                    $ctrl.echartsConfig.status = false;
                                     event.button === 2 && this._linkHandlerMouseup(event, e);
                                     break;
                                 case (type === 'dblclick' && e.elementType === 'node'): //双击事件&& node
@@ -360,9 +513,16 @@ angular.module(ProjectName)
                                     o.elementType = f.elementType;
                                     o.x = f.x;
                                     o.y = f.y;
-                                    o.id = f.x * f.y;
-                                console.log(typeof f.Image, f);
-                                    o.Image = typeof f.Image === 'object' ? f.Image.getDataURL() : f.Image;
+                                    o.width = f.width;
+                                    o.height = f.height;
+                                    o.option = f.option;
+                                    o.id = f.id;
+                                    f.ecid && (o.ecid = f.ecid);
+                                    o.rtopen = f.rtopen || 0;
+                                    f.rtapi && (o.rtapi = f.rtapi);
+                                    o.echartType = f.echartType;
+                                  //  o.Image = typeof f.Image === 'object' ? f.Image.getDataURL() : f.Image;
+                                    o.Image = f.Image;
                                     o.text = f.text;
                                     o.textPosition = f.textPosition;
                                     o.larm = f.alarm || '';
@@ -370,7 +530,16 @@ angular.module(ProjectName)
                                 }
                                 data.push(o);
                             }
-                            console.log(data);
+                            console.log(data);//, '\n', JSON.stringify(data));
+                        },
+                        saveConfig: function () {
+                            var data = this.getEchartsData;
+                           // currentNode = angular.extend(currentNode, data, true);
+                           // currentNode.Echarts = angular.extend(currentNode.Echarts, data, true);
+                            currentNode.Echarts.CONFIG.config = angular.extend(currentNode.Echarts.CONFIG.config, data, true);
+                            $ctrl.echartsConfig.status = false;
+                            console.log(currentNode.Echarts, data);
+
                         },
                         _initEvent: function () {
                             var _this = this,
@@ -382,6 +551,11 @@ angular.module(ProjectName)
                             $scope.$on('Monitor:echarts', function (event, data) {
                                 return $timeout(function () {
                                     _this._createEcharts.call(_this, data);
+                                });
+                            });
+                            $scope.$on('Monitor:rtEcharts', function (event, data) {
+                                return $timeout(function () {
+                                    return _this._realTimeEcharts.call(_this, data);
                                 });
                             });
                             this.Scene.dbclick(function (e) {
@@ -417,6 +591,7 @@ angular.module(ProjectName)
                     }
                 }();
                 MonitorController.init();
+                $scope.MonitorController = MonitorController;
             }
         };
         return directive;

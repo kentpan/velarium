@@ -197,9 +197,9 @@ route_module.factory('permissionService', function ($q, $rootScope, CONFIG) {
                     return $ocLazyLoad.load([
                         'theme/default/css/monitor.css',
                         'controller/monitor_controller.js',
-                        'directives/ng-echarts.js',
-                        'modules/common/monitor/jtopo-0.4.8-min.js',
-                        'modules/common/monitor/monitor.js'
+                        'modules/common/monitor/jtopo-0.4.8.js',
+                        'modules/common/monitor/monitor.js',
+                        'directives/ng-echarts.js'
                     ]);
                 }]
             },

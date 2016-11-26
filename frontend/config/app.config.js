@@ -5,6 +5,7 @@ angular.module(window.ProjectName, ['ngRoute', 'ui.router', 'ngCookies', 'oc.laz
     noCache: true,
     version: window.ProjectVersion || '1.0.1',
     webRoot: './frontend/',
+    realTime: 3000, //实时监控间隔时间
     getApi: function (online) {
         var isLocal = !!(/((kent|tianbin|luoaihua)\.baidu\.com|\d{0,3}\.\d{0,3}\.\d{0,3}\.\d{0,3})/i
     .test(location.hostname));

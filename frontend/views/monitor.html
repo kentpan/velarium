@@ -1,11 +1,13 @@
 <div class="sur-right" id="monitor" style="position: relative;">
     <div class="monitor-toolsbar">
-        <button type="button" id="monitor-save" ng-click="monitor.save()"> 保存 </button>
-        <button type="button" id="monitor-addNode" ng-click="monitor.addNode()"> 添加节点 </button>
+        <button type="button" class="monitor-save" ng-click="monitor.save()"> 保存 </button>
+        <button type="button" class="monitor-addNode" ng-click="monitor.addEcharts('line')"> 添加折线图 </button>
+        <button type="button" class="monitor-addNode" ng-click="monitor.addEcharts('bar')"> 添加柱状图 </button>
     </div>
     <div id="monitorContainer" canvas="monitor.canvasConf"></div>
 
     <div id="echartsContainer">
-        <echarts ec-config="monitor.echartsConfig" style="display:block; width: 400px; height: 260px;"></echarts>
+        <echarts ng-repeat="list in monitor.EchartsList" id="{{list.id}}" ec-config="list.data" style="display:block; width: {{list.width}}px; height: {{list.height}}px;"></echarts>
+        <!--<echarts ec-config="monitor.echartsConfig" style="display:block; width: 400px; height: 260px;"></echarts>-->
     </div>
 </div>

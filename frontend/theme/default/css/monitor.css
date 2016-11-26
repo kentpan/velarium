@@ -10,13 +10,17 @@
     width: 100%;
     float: left;
     height: auto;
-    background-color: #e4e6e9;
+}
+.monitor-toolsbar {
+    margin-top: -10px;
+    padding: 10px;
 }
 #monitorContainer {
+    background-color: #e4e6e9;
     height: 800px;
 }
 #echartsContainer {
-    display: none;
+   /* display: none;*/
 }
 #monitor-editor {
     z-index: -1;
@@ -53,8 +57,49 @@
     padding: 0;
     box-shadow: 0 0 5px #434343;
 }
-#monitor-tools li{
+#monitor-echartsMenu {
     width:122px;
+    border: 1px solid #aaa;
+    border-radius:7px;
+    border-bottom: 0;
+    background: #eee;
+    position: absolute;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    box-shadow: 0 0 5px #434343;
+}
+#monitor-echartsConfigContainer {
+    width: 300px;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    border-bottom: 0;
+    background: #eee;
+    position: absolute;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    box-shadow: 0 0 5px #434343;
+}
+#monitor-echartsConfigContainer li{
+    border-bottom: 1px solid #ADADAD;
+}
+#monitor-echartsConfigContainer li span{
+    width: 100px;
+    border-bottom: none;
+}
+#monitor-echartsConfigContainer li.bottom{
+    border-bottom: none;
+    padding: 10px;
+    text-align: center;
+}
+#monitor-echartsConfigContainer li.bottom button{
+    border: 1px solid #eee;
+    padding: 10px;
+    text-align: center;
+}
+#monitor-tools li{
+    width: 100%;
     position:relative;
 }
 
